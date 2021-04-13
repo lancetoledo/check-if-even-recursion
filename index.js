@@ -17,13 +17,8 @@ function checkEven(num) {
     return false;
   } //Subtract num by 2 until its 0 or 1
   else {
-    //If the value for checkEven is truthy return true
-    if (checkEven(num - 2)) {
-      return true;
-    } else {
-      return false;
-    }
+    return checkEven(num - 2);
   }
 }
 
-console.log(checkEven(33));
+console.log(checkEven(77));
